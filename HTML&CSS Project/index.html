@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#page2">My hobbies</a></li>
+        <li><a href="#page3">My birthday</a></li>
+        <li><a href="#page4">Contact Us</a></li>
+        <li><a href="#page5">Countries</a></li>
+        <li><a href="#page6">Page 6</a></li>
+    </ul>
+
+    <div class="content">
+        <div class="page" id="home">
+            <div class="hello">
+                <p>Hello,</p>
+                <p>I'm AbdAllah</p>
+                <p>Front End Engineer.</p>
+            </div>
+            <img src="https://abdallah1441.github.io/Portfolio/static/media/profile-pic.0fcda316d066b0577c70.png" alt="Your Image" class="profile-img">
+        </div>
+
+        <div class="page" id="page2">
+            <h1>My Hobbies</h1>
+            <div class="hobbies">
+                <div class="hobby">
+                    <p>Reading</p>
+                    <div class="image-container">
+                        <img src="https://wallpapers.com/images/hd/literature-background-28y4c8sjizyqxj0l.jpg" alt="Hobby 1">
+                    </div>
+                </div>
+                <div class="hobby">
+                    <p>Bike Riding</p>
+                    <div class="image-container">
+                        <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/mountain-bike-erzebet-s.jpg" alt="Hobby 2">
+                    </div>
+                </div>
+                <div class="hobby">
+                    <p>programming</p>
+                    <div class="image-container">
+                        <img src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg" alt="Hobby 3">
+                    </div>
+                </div>
+            </div>
+        </div>       
+
+        <div class="page" id="page3">
+            <h1>My Birthday</h1>
+            <div class="birthday-content">
+                <img id="birthimg" class="birthday-img" src="https://blog.tribute.co/wp-content/uploads/2023/04/Blog-Post-Imges-4.png" alt="Birthday Image">
+                <div id="birthmsg" class="message-form">
+                    <form class="birthform" action="#thankyou">
+                        <textarea placeholder="Write a kind message..." required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page" id="thankyou">
+            <h1>Thank You!</h1>
+            <p>Thank you for your kind message!</p>
+            <img src="https://www.rontar.com/blog/wp-content/uploads/2024/03/10-professional-ways-to-say-thank-you-for-the-information-in-an-email.jpg" alt="thanks">
+        </div>              
+
+        <div class="page" id="page4">
+            <h1>Contact Us</h1>
+            <form class="contact-form" action="#thankyou">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+        
+                <button type="submit">Submit</button>
+            </form>
+            <div class="social-media">
+                <a href="https://abdallah1441.github.io/Portfolio/" target="_blank">
+                    <img src="https://www.svgrepo.com/show/80307/world.svg" alt="Website">
+                </a>
+                <a href="https://github.com/yourprofile" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/abdallah1441/" target="_blank">
+                    <img src="https://www.vectorico.com/wp-content/uploads/2018/02/LinkedIn-Icon-Squircle-Dark.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+
+        <div class="page" id="page5">
+            <h1>Countries I want to visit</h1>
+            <div class="container">
+                <div class="card">
+                    <div class="image">
+                        <img src="https://miro.medium.com/v2/resize:fit:1358/1*ifrPVZVzm1vh-4iUrB3dFw.jpeg" alt="" />
+                    </div>
+                    <h2>Makkah</h2>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="https://www.learnreligions.com/thmb/CbAes94AfZqF1N8OnpYW9fpc8RY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/MadinahMosque-58b8e5953df78c353c252d4b.jpg" alt="" />
+                    </div>
+                    <h2>Al-Madinah</h2>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="https://www.jerusalem-pi.org/wp-content/uploads/2022/10/Al-Quds.jpg" alt="" />
+                    </div>
+                    <h2>Al-Quds</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="page" id="page6">
+            <h1>Curriculum Vitae</h1>
+            <div class="cv-container">
+                    <div class="left-cv">
+                        <div class="cv-section">
+                            <h2>Personal Information</h2>
+                            <p><strong>Name:</strong> AbdAllah Mostafa</p>
+                            <p><strong>Email:</strong> abdallah.mostafa@example.com</p>
+                            <p><strong>Phone:</strong> +123 456 7890</p>
+                            <p><strong>Address:</strong> 1234 Street Name, City, Country</p>
+                        </div>
+                        <div class="cv-section">
+                            <h2>Skills</h2>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>Git</li>
+                            </ul>
+                        </div>                
+                    </div>
+
+                    <div class="right-cv">
+                        <div class="cv-section">
+                            <h2>Experience</h2>
+                            <div class="experience">
+                                <h3>Front End Engineer</h3>
+                                <p><strong>Company:</strong> Tech Solutions Inc.</p>
+                                <p><strong>Duration:</strong> January 2021 - Present</p>
+                                <p>Responsibilities:</p>
+                                <ul>
+                                    <li>Developing and maintaining the front end of the company website.</li>
+                                    <li>Collaborating with designers to create user-friendly interfaces.</li>
+                                    <li>Implementing responsive design to enhance user experience.</li>
+                                </ul>
+                            </div>
+                            <div class="experience">
+                                <h3>Web Developer Intern</h3>
+                                <p><strong>Company:</strong> WebWorks</p>
+                                <p><strong>Duration:</strong> June 2020 - December 2020</p>
+                                <p>Responsibilities:</p>
+                                <ul>
+                                    <li>Assisting in the development of web applications.</li>
+                                    <li>Debugging and troubleshooting code.</li>
+                                    <li>Participating in code reviews and team meetings.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cv-section">
+                            <h2>Education</h2>
+                            <div class="education">
+                                <h3>Bachelor of Science in Computer Science</h3>
+                                <p><strong>University:</strong> ABC University</p>
+                                <p><strong>Graduation Year:</strong> 2020</p>
+                            </div>
+                        </div>                
+                    </div>
+                </div>                
+            </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 AbdAllah Mostafa. All rights reserved.</p>
+    </div>
+</body>
+</html>
