@@ -1,0 +1,390 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.content {
+    position: relative;
+}
+
+.nav {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav li {
+    flex-shrink: 0;
+}
+
+.nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    text-decoration: underline;
+}
+
+.page {
+    width: 100vw;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    padding: 30px;
+    min-height: 86.2vh;
+    display: none;
+    flex-direction: column;
+}
+
+.page:target {
+    display: flex;
+}
+
+#home {
+    background-color: transparent;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 10%;
+}
+
+.hello {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello p {
+    font-size: 3em;
+    font-weight: 600;
+    color: #333;
+}
+
+.profile-img {
+    align-self: center;
+    width: 500px;
+    height: 500px;
+}
+
+.page h1 {
+    font-size: 2.5em;
+    align-self: center;
+}
+
+#page2 .hobbies {
+    justify-self: center;
+}
+
+.hobbies {
+    margin-top: 4%;
+    display: flex;
+    gap: 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hobby {
+    flex-shrink: 0;
+    text-align: center;
+    width: 380px;
+}
+
+.hobby p {
+    font-weight: 600;
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.image-container {
+    border-radius: 15px;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.image-container img {
+    height: 300px;
+    transition: transform 0.3s;
+}
+
+.image-container img:hover {
+    transform: scale(1.2);
+}
+
+#page3 {
+    justify-content: space-between;
+}
+
+#page3:target .birthday-img {
+    animation: hideImage 5s forwards;
+}
+
+@keyframes hideImage {
+    0% { opacity: 1; }
+    99% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+}
+
+.birthday-img {
+    position: absolute;
+    top: 50px;
+    left: 20vw;
+    max-width: 60vw;
+    display: block;
+    margin: 3% auto;
+    border-radius: 15px;
+}
+
+.message-form {
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 25vw;
+    z-index: -5;
+}
+
+.birthform {
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.birthform textarea {
+    border-radius: 15px;
+    padding: 15px;
+    width: 50vw;
+    min-height: 30vh;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3em;
+}
+
+.birthform button {
+    border-radius: 10px;
+    align-self: center;
+    width: 50vw;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#thankyou {
+    display: none;
+}
+
+#thankyou:target {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30%;
+}
+
+#thankyou img {
+    width: 40vw;
+}
+
+.contact-form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50vw;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+.social-media {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6b6868;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6b6868;
+}
+
+.container {
+    margin-top: 20px;
+    align-self: center;
+    display: flex;
+    gap: 12px;
+    max-width: 800px;
+    width: 100%;
+    background: #333;
+    border-radius: 12px;
+    padding: 30px;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    scroll-padding: 30px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.container .card {
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 12px;
+    background: #fff;
+    scroll-snap-align: start;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card .image {
+    height: 300px;
+    width: 600px;
+    padding: 4px;
+    background: #333;
+    border-radius: 15px;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid #fff;
+}
+
+.card h2 {
+    margin-top: 25px;
+    color: #333;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.cv-container {
+    display: flex;
+}
+
+.cv-section {
+    margin: 20px 0;
+}
+
+.cv-section h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cv-section p,
+.cv-section ul {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.cv-section ul {
+    list-style-type: disc;
+}
+
+.cv-section ul li {
+    margin-bottom: 5px;
+}
+
+.experience, .education {
+    margin-left: 20px;
+}
+
+.experience h3, .education h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.experience p, .education p {
+    margin: 5px 0;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+.footer p {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+}
