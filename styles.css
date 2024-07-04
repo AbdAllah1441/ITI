@@ -6,7 +6,11 @@
     color: #333;
 }
 
-.content {
+body {
+    min-height: 100dvh;
+}
+
+.content, body {
     position: relative;
 }
 
@@ -36,7 +40,7 @@
 }
 
 .page {
-    width: 100vw;
+    width: 100%;
     z-index: 1;
     position: absolute;
     top: 0;
@@ -99,6 +103,7 @@
     gap: 5%;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .hobby {
@@ -154,11 +159,26 @@
 }
 
 .message-form {
-    display: block;
     position: absolute;
     top: 150px;
     left: 25vw;
     z-index: -5;
+}
+
+#page3:target .message-form{
+    animation: showForm 5s forwards;
+}
+
+@keyframes showForm {
+    0%{
+        display: none;    
+    }
+    99% {
+        display: none;
+    }
+    100%{
+        display: block;
+    }
 }
 
 .birthform {
@@ -211,7 +231,7 @@ button:hover {
 }
 
 .contact-form {
-    margin: 0 auto;
+    margin: 40px auto -5px auto;
     display: flex;
     flex-direction: column;
 }
@@ -337,13 +357,22 @@ button:hover {
 
 .cv-container {
     display: flex;
+    justify-content: space-between;
 }
 
 .cv-section {
+    display: flex;
+    flex-direction: column;
     margin: 20px 0;
 }
 
+.cv-section .skills {
+    display: flex;
+    justify-content: space-between;
+}
+
 .cv-section h2 {
+    align-self: center;
     font-size: 1.8em;
     color: #333;
     margin-bottom: 10px;
@@ -377,8 +406,9 @@ button:hover {
 }
 
 .footer {
+    z-index: 3;
     position: fixed;
-    bottom: 0;
+    bottom: 0px;
     width: 100vw;
 }
 
